@@ -1,7 +1,10 @@
 const list = document.getElementsByClassName('list')[0];
 
 function addItem() {
-    const itemText = prompt('What to add?') || 'empty';
+    const input = document.querySelector('.app-input');
+    const itemText = input.value;
+    list.scrollTop = list.scrollHeight;
+    input.value = '';
     const item = document.createElement('div');
     item.innerHTML = `${itemText}<button class="btn delete-btn">X</button>`;
     list.appendChild(item);
@@ -9,7 +12,10 @@ function addItem() {
 }
 
 function addClear() {
-    list.innerHTML = '';
+    const listItem = list.querySelectorAll('.list > div:not(:first-child)');
+    listItem.forEach(item => {
+        item.remove();
+    });
 }
 
 function deleteItem(event) {

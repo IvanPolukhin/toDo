@@ -28,6 +28,12 @@ h1 {
     justify-content: space-between;
 }
 
+.app-input {
+    height: 30px;
+    width: 294px;
+    overflow-y: scroll;
+}
+
 .btn {
     padding: 10px 15px;
     background: #f7df1d;
@@ -54,7 +60,6 @@ h1 {
     gap: 5px;
 }
 
-.btns-container > * {
-    flex:1 1;
+.btns-container>* {
+    flex: 1 1;
 }
-
