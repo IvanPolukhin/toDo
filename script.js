@@ -3,10 +3,16 @@ const list = document.getElementsByClassName('list')[0];
 function addItem() {
     const input = document.querySelector('.app-input');
     const itemText = input.value;
-    list.scrollTop = list.scrollHeight;
+    if (itemText === '') return
     input.value = '';
     const item = document.createElement('div');
-    item.innerHTML = `${itemText}<button class="btn delete-btn">X</button><button class="btn edit-btn">Edit</button>`;
+    item.innerHTML = `
+    <div>${itemText}</div>
+    <div>
+    <button class="btn delete-btn">X</button>
+    <button class="btn edit-btn">Edit</button>
+    </div>
+    `;
     list.appendChild(item);
     addDelete();
     addEdit();
