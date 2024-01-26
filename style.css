@@ -28,30 +28,25 @@ h1 {
     justify-content: space-between;
 }
 
+.list>* .app-input {
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .app-input {
-    height: 30px;
+    height: 25px;
     width: 294px;
     overflow-y: scroll;
 }
 
 .btn {
-    padding: 10px 15px;
-    background: #f7df1d;
     font-size: 0.8rem;
     font-weight: bold;
     border: unset;
     border-radius: 8px;
-    color: #3f3f3f;
     cursor: pointer;
-}
-
-.delete-btn {
-    padding: 6px 8px;
-    font-size: 0.5rem;
-    font-weight: 700;
-    border-radius: 5px;
-    background: #ff3d4d;
-    color: #fff;
 }
 
 .btns-container {
@@ -62,4 +57,44 @@ h1 {
 
 .btns-container>* {
     flex: 1 1;
+}
+
+.delete-btn,
+.edit-btn {
+    padding: 6px 8px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: red;
+}
+
+.edit-btn {
+    background: green;
+}
+
+.btn-add {
+    padding: 10px 15px;
+    background: #f7df1d;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: unset;
+    border-radius: 8px;
+    color: #3f3f3f;
+    cursor: pointer;
+}
+
+.btn-clear {
+    padding: 10px 15px;
+    background: #f7df1d;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: unset;
+    border-radius: 8px;
+    color: #3f3f3f;
+    cursor: pointer;
 }
