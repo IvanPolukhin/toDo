@@ -7,7 +7,7 @@ function addItem() {
     input.value = '';
     const item = document.createElement('div');
     item.innerHTML = `
-    <div>${itemText}</div>
+    <div class="maxW">${itemText}</div>
     <div>
     <button class="btn delete-btn">X</button>
     <button class="btn edit-btn">Edit</button>
