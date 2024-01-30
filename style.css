@@ -14,7 +14,8 @@ h1 {
     padding: 25px;
     border-radius: 20px;
     width: 300px;
-    margin: 100px 580px 0;
+    margin: 100px auto 0;
+    /* Центрирование блока .app */
 }
 
 .list-container {
@@ -37,7 +38,8 @@ h1 {
 
 .app-input {
     height: 25px;
-    width: 294px;
+    width: 100%;
+    /* Использование ширины родительского контейнера */
     overflow-y: scroll;
 }
 
@@ -77,17 +79,7 @@ h1 {
     background: green;
 }
 
-.btn-add {
-    padding: 10px 15px;
-    background: #f7df1d;
-    font-size: 0.8rem;
-    font-weight: bold;
-    border: unset;
-    border-radius: 8px;
-    color: #3f3f3f;
-    cursor: pointer;
-}
-
+.btn-add,
 .btn-clear {
     padding: 10px 15px;
     background: #f7df1d;
